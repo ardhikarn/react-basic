@@ -22,7 +22,7 @@ export default function Todos() {
   return (
     <section className="todos">
       {todos.map((todo) => {
-        return <Todo text={todo.text} />;
+        return <Todo key={todo.text} text={todo.text} />;
       })}
     </section>
   );
