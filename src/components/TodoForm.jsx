@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 export default function TodoForm({ addTodo }) {
-  const [value, setValue] = useState("");
+  const [valuet, setValue] = useState("");
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    if (!value || !value.trim()) {
+    if (!valuet || !valuet.trim()) {
       alert("No Blank Todo !");
       return setValue("");
     }
 
-    addTodo(value);
-    alert(value);
+    addTodo(valuet);
     setValue("");
   };
 
@@ -20,7 +19,7 @@ export default function TodoForm({ addTodo }) {
     <section className="add">
       <form className="add-form" onSubmit={handleFormSubmit}>
         <input
-          value={value}
+          value={valuet}
           type="text"
           className="add-input"
           onChange={(e) => {
