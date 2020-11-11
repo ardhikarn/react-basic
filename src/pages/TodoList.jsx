@@ -24,7 +24,7 @@ function TodoList() {
 
   return (
     <Paper>
-      <Header showAddToggle={showAddToggle} />
+      <Header showAddToggle={showAddToggle} isShow={isShow} />
       <TodoForm addTodo={addTodo} isShow={isShow} />
       <Todos todos={todos} />
     </Paper>
