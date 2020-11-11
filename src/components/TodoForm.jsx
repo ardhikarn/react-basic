@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-export default function TodoForm({ addTodo, isShow }) {
+export default function TodoForm({ addTodo, isShow, todos }) {
   const [value, setValue] = useState("");
 
   const handleFormSubmit = (e) => {
@@ -13,6 +13,11 @@ export default function TodoForm({ addTodo, isShow }) {
 
     if (value.length >= 25) {
       alert("Please create a shorter todo text !");
+      return setValue("");
+    }
+
+    if (todos.length >= 10) {
+      alert("Maximal 10 todo, you can remove other todo first");
       return setValue("");
     }
 

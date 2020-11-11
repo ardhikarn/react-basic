@@ -29,12 +29,16 @@ function TodoList() {
     setTodos(addedTodo);
   };
 
-  console.log(todos);
+  const clearAllTodos = () => setTodos([]);
 
   return (
     <Paper>
-      <Header showAddToggle={showAddToggle} isShow={isShow} />
-      <TodoForm addTodo={addTodo} isShow={isShow} />
+      <Header
+        showAddToggle={showAddToggle}
+        isShow={isShow}
+        clearAllTodos={clearAllTodos}
+      />
+      <TodoForm addTodo={addTodo} isShow={isShow} todos={todos} />
       <Todos todos={todos} completeTodo={completeTodo} />
     </Paper>
   );
