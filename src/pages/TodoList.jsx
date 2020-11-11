@@ -29,7 +29,7 @@ function TodoList() {
     setTodos(addedTodo);
   };
 
-  const clearAllTodos = () => setTodos([]);
+  const clearAllTodos = () => !isShow && setTodos([]);
 
   return (
     <Paper>
