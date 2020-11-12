@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Paper from "../components/Paper/Paper";
 import Header from "../components/Header/Header";
-import TodoForm from "../components/TodoForm";
+import TodoForm from "../components/TodoForm/TodoForm";
 import Todos from "../components/Todos";
 
 function TodoList() {
