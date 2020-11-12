@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Paper from "../components/Paper/Paper";
 import Header from "../components/Header/Header";
 import TodoForm from "../components/TodoForm/TodoForm";
-import Todos from "../components/Todos";
+import Todos from "../components/Todos/Todos";
 
 function TodoList() {
   const [todos, setTodos] = useState([
