@@ -9,14 +9,6 @@
   --main-black-color: #484848;
 }
 
-.main-red-color {
-  color: var(--main-red-color)
-}
-
-.main-black-color {
-  color: var(--main-black-color)
-}
-
 html {
   font-size: 10px;
 }
@@ -49,21 +41,6 @@ body, html {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.header {
-  display: flex;
-  align-items: flex-start;
-}
-
-.header-title {
-  width: 52%;
-  text-align: center;
-  font-size: 3.6rem;
-  font-family: 'Homemade Apple', sans-serif;
-  text-transform: lowercase;
-  color: var(--main-black-color);
-}
-
 
 .add {
   padding: 16px;
