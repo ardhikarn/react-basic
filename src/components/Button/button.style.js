@@ -40,5 +40,8 @@ export const button = ({ color, align, theme }) => {
     outline: unset;
     cursor: pointer;
     text-align: ${align};
+    &:active {
+      text-shadow: 1px 1px 2px ${textColor};
+    }
   `;
 };
