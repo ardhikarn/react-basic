@@ -3,7 +3,6 @@ import Paper from "../components/Paper/Paper";
 import Header from "../components/Header/Header";
 import TodoForm from "../components/TodoForm/TodoForm";
 import Todos from "../components/Todos/Todos";
-import { css } from "@emotion/react";
 
 function TodoList() {
   const [todos, setTodos] = useState([
@@ -33,15 +32,6 @@ function TodoList() {
   const clearAllTodos = () => !isShow && setTodos([]);
   return (
     <Paper>
-      <div
-        css={css`
-          font-size: 60px;
-          font-weight: bold;
-          color: RED;
-        `}
-      >
-        BISAAA COOOY
-      </div>
       <Header
         showAddToggle={showAddToggle}
         isShow={isShow}

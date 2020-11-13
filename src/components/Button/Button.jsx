@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./Button.module.css";
+// import styles from "./Button.module.css";
 import cx from "classnames";
+import * as styles from "./button.style";
 
 export default function Button({ text, onClick, color, align }) {
   // const classNames = [
@@ -12,15 +13,18 @@ export default function Button({ text, onClick, color, align }) {
   //   align === "right" && "align-right",
   // ].join(" ");
 
-  const classNames = cx(styles.headerBtn, {
-    [styles.mainBlackColor]: color === "black",
-    [styles.mainRedColor]: color === "red",
-    [styles.alignLeft]: align === "left",
-    [styles.alignRight]: align === "right",
-  });
+  // const classNames = cx(styles.headerBtn, {
+  //   [styles.mainBlackColor]: color === "black",
+  //   [styles.mainRedColor]: color === "red",
+  //   [styles.alignLeft]: align === "left",
+  //   [styles.alignRight]: align === "right",
+  // });
 
   return (
-    <button className={classNames} onClick={onClick}>
+    // <button className={classNames} onClick={onClick}>
+    //   {text}
+    // </button>
+    <button css={styles.button({ align, color })} onClick={onClick}>
       {text}
     </button>
   );
