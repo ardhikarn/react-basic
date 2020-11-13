@@ -6,14 +6,14 @@
   color: var(--main-black-color)
 }
 
-.alignLeft {
+/* .alignLeft {
   text-align: left;
 }
 
 .alignRight {
   text-align: right;
-}
-
+} */
+/* 
 .headerBtn {
   width: 24%;
   font-size: 1.8rem;
@@ -23,7 +23,7 @@
   border: unset;
   outline: unset;
   cursor: pointer;
-}
+} */
 
 .headerBtn.mainRedColor:active {
   text-shadow: 1px 1px 2px var(--main-red-color);

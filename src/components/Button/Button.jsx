@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import styles from "./Button.module.css";
-import cx from "classnames";
+// import cx from "classnames";
 import * as styles from "./button.style";
+import { useTheme } from "@emotion/react";
 
 export default function Button({ text, onClick, color, align }) {
   // const classNames = [
@@ -20,11 +21,13 @@ export default function Button({ text, onClick, color, align }) {
   //   [styles.alignRight]: align === "right",
   // });
 
+  const theme = useTheme();
+
   return (
     // <button className={classNames} onClick={onClick}>
     //   {text}
     // </button>
-    <button css={styles.button({ align, color })} onClick={onClick}>
+    <button css={styles.button({ align, color, theme })} onClick={onClick}>
       {text}
     </button>
   );
